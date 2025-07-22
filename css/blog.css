@@ -1,0 +1,55 @@
+/* 全体の基本設定 */
+body {
+  font-family: "M PLUS 1", sans-serif;
+  line-height: 1.8;
+  background-color: #fff;
+  color: #333;
+}
+
+/* メインコンテンツのレイアウト */
+main {
+  max-width: 900px; /* 横幅を最大900pxに制限 */
+  margin: 3em auto; /* 上下に余白を取り、左右は自動で中央寄せ */
+  padding: 1em;     /* コンテンツの内側の余白を少し調整 */
+  /* 影と背景色の指定を削除 */
+}
+
+/* 見出しのスタイル */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.4em;
+}
+
+/* テーブルのスタイル */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.8em;
+  text-align: center;
+}
+
+th {
+  background-color: #f9f9f9;
+}
+
+/* 数式の表示調整 */
+.MathJax_Display {
+  margin: 2em 0;
+  overflow-x: auto;
+}

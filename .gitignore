@@ -8,7 +8,13 @@ Thumbs.db
 *.log
 npm-debug.log*
 
+# Ruby
 .bundle/
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-metadata
 
 .env
 .env.local
