@@ -1,8 +1,18 @@
----
-layout: default
----
-
 <!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="/">Ruk3kのブログ</a></h1>
+  </header>
+  <main>
+    <!DOCTYPE html>
 <html lang="ja">
 
 <head>
@@ -28,13 +38,18 @@ layout: default
 
   <h1>ブログ</h1>
   <ul>
-    {% for post in site.posts %}
+    
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <span>{{ post.date | date: "%Y年%m月%d日" }}</span>
+        <a href="/2025/07/23/%E4%B8%80%E8%88%AC%E3%81%AE%E7%9B%B4%E4%BA%A4%E6%9B%B2%E7%B7%9A%E5%BA%A7%E6%A8%99%E7%B3%BB%E3%81%A8%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E5%9B%A0%E5%AD%90.html">一般の直交曲線座標系とスケール因子</a>
+        <span>2025年07月23日</span>
       </li>
-    {% endfor %}
+    
   </ul>
+</body>
+
+</html>
+
+  </main>
 </body>
 
 </html>

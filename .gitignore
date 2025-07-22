@@ -8,6 +8,8 @@ Thumbs.db
 *.log
 npm-debug.log*
 
+.bundle/
+
 .env
 .env.local
 .env.development.local
