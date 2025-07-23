@@ -1,0 +1,14 @@
+---
+---
+
+// 1. 変数とMixinを読み込む
+@import "variables";
+@import "mixins";
+
+// 2. サイト全体の基本スタイルを読み込む
+@import "base";
+
+// 3. 各コンポーネントのスタイルを読み込む
+@import "header";
+@import "footer";
+@import "posts";

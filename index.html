@@ -1,41 +1,35 @@
 ---
-layout: home
+layout: default
 title: ホーム
+description: るくみるのホームページへようこそ。ここでは日々の思考や学習の記録を公開しています。
+og_image: /assets/images/home-ogp.jpg # このページ固有のOGP画像
 ---
 
-<!DOCTYPE html>
-<html lang="ja">
+<h2>最近の投稿</h2>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ruk3kが作成した最初のWebページです。">
+<ul class="blog-posts-list">
+  {% assign recent_posts = site.posts | limit: 6 %}
+  {% for post in recent_posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">
+        <h3>{{ post.title }}</h3>
 
-  <meta property="og:title" content="Ruk3kのホームページ">
-  <meta property="og:description" content="Ruk3kのホームページです。">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ruk3k.github.io/my-homepage/">
-  <meta property="og:image" content="https://ruk3k.github.io/my-homepage/favicon.ico">
+        <div class="post-info">
+          <p class="post-tags">
+            {% if post.tags.size > 0 %}
+              {% for tag in post.tags %}
+                <span>#{{ tag }}</span>
+              {% endfor %}
+            {% endif %}
+          </p>
+          <p class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</p>
+        </div>
 
-  <title>Ruk3k</title>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
 
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <h1>こんにちは！</h1>
-  <p>GitHub Pagesで公開した最初のWebページです。</p>
-
-  <h1>ブログ</h1>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <span>{{ post.date | date: "%Y年%m月%d日" }}</span>
-      </li>
-    {% endfor %}
-  </ul>
-</body>
-
-</html>
+<p style="text-align: right;">
+  <a href="{{ '/blog/' | relative_url }}">もっと見る &gt;&gt;</a>
+</p>

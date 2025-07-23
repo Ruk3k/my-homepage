@@ -1,0 +1,44 @@
+---
+layout: default
+title: ブログ
+permalink: /blog/
+---
+
+<h2>カテゴリ別記事一覧</h2>
+{% for category in site.categories %}
+  {% assign category_slug = category | first %}
+  {% assign posts_in_category = category | last %}
+
+  {% comment %} _data/categories.yml から日本語名を取得 {% endcomment %}
+  {% assign category_display_name = category_slug %}
+  {% for item in site.data.categories %}
+    {% if item.slug == category_slug %}
+      {% assign category_display_name = item.name %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  <h3>
+      {{ category_display_name }}
+  </h3>
+
+  <ul class="blog-posts-list">
+    {% for post in posts_in_category %}
+      <li>
+        <a href="{{ post.url | relative_url }}">
+          <h3>{{ post.title }}</h3>
+          <div class="post-info">
+              <p class="post-tags">
+                {% if post.tags.size > 0 %}
+                  {% for tag in post.tags %}
+                    <span>#{{ tag }}</span>
+                  {% endfor %}
+                {% endif %}
+              </p>
+              <p class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</p>
+            </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

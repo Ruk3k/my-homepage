@@ -1,0 +1,77 @@
+// ===== 基本スタイル =====
+html {
+  overflow-y: scroll;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.8;
+  background-color: #fff;
+  color: $main-text-color;
+}
+
+main {
+  a {
+    color: $main-text-color;
+    text-decoration: none;
+    &:hover {
+      color: $accent-pink;
+      text-decoration: underline;
+    }
+  }
+}
+
+.content-wrapper {
+  max-width: $content-max-width;
+  margin: 1.5em auto;
+  padding: 0 $content-padding-lr;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-weight: 600;
+  color: $main-text-color;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+h2 {
+  border-bottom: 2px solid $main-text-color;
+  padding-bottom: 0.4em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+
+  th, td {
+    border: 1px solid $border-light-gray;
+    padding: 0.8em;
+    text-align: center;
+  }
+
+  th {
+    background-color: $table-header-bg;
+  }
+}
+
+.MathJax_Display {
+  margin: 2em 0;
+  overflow-x: auto;
+}

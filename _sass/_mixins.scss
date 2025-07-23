@@ -1,0 +1,30 @@
+// タグのコンテナ（flexbox）
+@mixin tags-container {
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  order: 1;
+}
+
+// 個々のタグ
+@mixin tag-item {
+  display: inline-block;
+  background-color: #e7e7e7;
+  color: #555;
+  font-size: 0.8em;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+}
+
+// 日付などのメタ情報
+@mixin post-meta {
+  color: $text-light;
+  font-size: 0.9em;
+  white-space: nowrap;
+  flex-shrink: 0;
+  order: 2;
+}

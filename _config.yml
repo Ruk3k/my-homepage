@@ -1,10 +1,30 @@
-title: Ruk3kのブログ
-description: 気ままに考えたことを書いていきます。
+# _config.yml
+
+# サイトの基本情報
+title: るくみるのホームページ
+description: 気ままに考えたことを書いています。
+url: "https://ruk3k.github.io" # あなたのサイトのドメイン名 (OGPやRSSなどで利用)
+baseurl: "/my-homepage" # GitHub Pagesのプロジェクト名 (ローカルテスト時は "" に変更することが多い)
+
+# OGP画像のデフォルト (オプション)
+og_image: "/assets/images/default-ogp.jpg" # サイトのルートからの相対パス
+
+# Twitterアカウント (オプション)
+twitter_username: ruk3k # 例: your_twitter_handle
+
+# カテゴリとタグの設定
+category_names:
+  math: 数学
+  physics: 物理学
+  semiconductors: 半導体
+  blog: ブログ
+
+# Jekyllの動作設定
 theme: minima
 timezone: Asia/Tokyo
-baseurl: /my-homepage
-permalink: /:categories/:title/
+permalink: /:categories/:title/ # 投稿のパーマリンク設定
 
+# ビルドから除外するファイル/ディレクトリ
 exclude:
   - Gemfile
   - Gemfile.lock

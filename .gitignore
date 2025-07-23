@@ -22,5 +22,6 @@ _site/
 .env.test.local
 .env.production.local
 
+# VSCodeの環境設定
 .vscode/
 .idea/

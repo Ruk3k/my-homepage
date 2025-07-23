@@ -1,0 +1,51 @@
+// ===== ヘッダーのスタイル =====
+header {
+  background-color: $header-bg-color;
+  padding: 15px 0;
+  border-bottom: 1px solid $border-thin-light;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+  .header-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-title {
+    color: $text-dark;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+    &:hover {
+      color: $accent-pink;
+    }
+  }
+
+  .main-nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      li {
+        margin: 0 8px;
+        color: $text-light;
+        a {
+          color: $text-dark;
+          text-decoration: none;
+          font-size: 1.05em;
+          white-space: nowrap;
+          padding: 5px 0;
+          &:hover {
+            color: $accent-pink;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
