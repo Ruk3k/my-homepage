@@ -2,7 +2,8 @@ title: Ruk3kのブログ
 description: 気ままに考えたことを書いていきます。
 theme: minima
 timezone: Asia/Tokyo
-baseurl: "/my-homepage"
+baseurl: /my-homepage
+permalink: /:categories/:title/
 
 exclude:
   - Gemfile
