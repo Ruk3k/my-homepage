@@ -75,6 +75,33 @@ table {
   margin: 2em 0;
   overflow-x: auto;
 }
+
+// タブレット向けのスタイル //
+@media (max-width: 1100px) {
+  body {
+    font-size: 16px;
+  }
+  .content-wrapper {
+    max-width: 98vw;
+    padding: 0 24px;
+  }
+  h1, .post-title {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.4em;
+  }
+  table th, table td {
+    padding: 0.6em;
+  }
+
+  .MathJax_Display {
+    margin: 2em 0;
+    overflow-x: auto;
+  }
+}
+
+// スマートフォン向けのスタイル //
 @media (max-width: 768px) {
 
   body {

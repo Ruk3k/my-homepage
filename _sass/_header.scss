@@ -47,3 +47,15 @@ header {
     }
   }
 }
+// タブレット向けのスタイル //
+@media (max-width: 1100px) {
+  header .header-inner {
+    max-width: 98vw;
+    margin: 0 auto;
+    padding: 0 24px;
+    gap: 10px;
+  }
+  header .main-nav {
+    margin-top: 10px;
+  }
+}
