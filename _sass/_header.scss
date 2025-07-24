@@ -1,27 +1,24 @@
 // ===== ヘッダーのスタイル =====
 header {
-  background-color: $header-bg-color;
+  background-color: $bg-color-header;
   padding: 15px 0;
-  border-bottom: 1px solid $border-thin-light;
+  border-bottom: 1px solid $border-color-thin;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 
   .header-inner {
-    max-width: 960px;
+    max-width: $content-max-width;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0.15em;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .site-title {
-    color: $text-dark;
+    color: $text-color-base;
     text-decoration: none;
     font-size: 1.8em;
     font-weight: bold;
-    &:hover {
-      color: $accent-pink;
-    }
   }
 
   .main-nav {
@@ -33,15 +30,15 @@ header {
       align-items: center;
       li {
         margin: 0 8px;
-        color: $text-light;
+        color: $text-color-light;
         a {
-          color: $text-dark;
+          color: $text-color-base;
           text-decoration: none;
           font-size: 1.05em;
           white-space: nowrap;
           padding: 5px 0;
           &:hover {
-            color: $accent-pink;
+            color: $color-accent;
             text-decoration: underline;
           }
         }

@@ -1,12 +1,26 @@
-// ===== 変数定義 =====
-$header-bg-color: white;
-$text-dark: #333;
-$main-text-color: #333;
-$text-light: #666;
-$accent-pink: #ff69b4;
-$border-light-gray: #ccc;
-$table-header-bg: #f9f9f9;
-$border-thin-light: #eee;
-$border-medium-light: #e0e0e0;
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+// ----- Colors -----
+
+// Text
+$text-color-base: #333;
+$text-color-light: #666;
+
+// Background
+$bg-color-header: white;
+$bg-color-table-header: #f9f9f9;
+
+// Border
+$border-color-light-gray: #ccc;
+$border-color-thin: #eee;
+$border-color-medium: #e0e0e0;
+
+// Accent
+$color-accent: #ff69b4;
+
+
+// ----- Layout -----
 $content-max-width: 900px;
-$content-padding-lr: 1em;
+$content-padding-lr: 0em;

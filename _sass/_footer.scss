@@ -1,11 +1,11 @@
 // ===== フッターのスタイル =====
 footer {
   background-color: #f8f8f8;
-  color: $text-light;
+  color: $text-color-light;
   padding: 20px 0;
   text-align: center;
   margin-top: 40px;
-  border-top: 1px solid $border-thin-light;
+  border-top: 1px solid $border-color-thin;
 
   .container {
     max-width: 960px;
@@ -14,10 +14,10 @@ footer {
   }
 
   a {
-    color: $text-light;
+    color: $text-color-light;
     text-decoration: none;
     &:hover {
-      color: $accent-pink;
+      color: $color-accent;
       text-decoration: underline;
     }
   }

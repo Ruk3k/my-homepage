@@ -21,6 +21,9 @@
   {% assign og_image = page.og_image | default: site.og_image | default: '/favicon.ico' %}
   <meta property="og:image" content="{{ og_image | absolute_url }}">
 
+  {% comment %} ビューポート設定 - レスポンシブデザイン対応 {% endcomment %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   {% comment %} Twitter Card 設定 - Twitterでの表示を最適化 {% endcomment %}
   <meta name="twitter:card" content="summary_large_image">
   {% if site.twitter_username %}<meta name="twitter:site" content="@{{ site.twitter_username }}">{% endif %}
