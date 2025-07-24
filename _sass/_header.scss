@@ -8,7 +8,7 @@ header {
   .header-inner {
     max-width: $content-max-width;
     margin: 0 auto;
-    padding: 0.15em;
+    padding: $content-padding-lr;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,9 +37,10 @@ header {
           font-size: 1.05em;
           white-space: nowrap;
           padding: 5px 0;
+          transition: color 0.2s ease-in-out;
+
           &:hover {
             color: $color-accent;
-            text-decoration: underline;
           }
         }
       }

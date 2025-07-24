@@ -1,0 +1,124 @@
+.profile-page {
+  position: relative;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  padding: 8px;
+  border-radius: 50%;
+  border: 2px solid $border-color-light-gray;
+  object-fit: cover;
+  flex-shrink: 0; // アイコンが縮まないように
+}
+
+.profile-info {
+  display: flex;
+  flex-wrap: wrap; // 画面幅に応じて折り返す
+  align-items: baseline; // テキストのベースラインを揃える
+  gap: 0em 1.5em; // 左右1.5emの余白
+}
+
+.profile-name {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  width: 100%; // 名前の行は常に幅いっぱいを確保
+  text-align: left;
+}
+
+.profile-handle,
+.affiliation-inline {
+  font-size: 1.1em;
+  color: $text-color-light;
+  margin: 0;
+  width: 100%
+}
+
+.affiliation-inline {
+  i {
+    margin-right: 0.3em;
+  }
+}
+
+.social-icons-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+  }
+
+  a {
+    color: $text-color-base;
+    font-size: 1.6em;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-page {
+    /* アイコンを配置するスペースを確保するために上部に余白を追加 */
+    padding-top: 0.3em;
+  }
+
+  .social-icons-top-right {
+    position: absolute;
+    top: 0em;   /* ← 親要素のpaddingに合わせて位置を調整 */
+    right: 0.5em; /* ← 右端の余白も調整 */
+    margin-top: 0;
+
+    ul {
+      gap: 10px;
+    }
+
+    a {
+      font-size: 1.4em;
+    }
+  }
+
+  .profile {
+    margin-bottom: 2em;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-info {
+    justify-content: center;
+    gap: 0.2em 1em;
+  }
+
+  .profile-name {
+    font-size: 1.5em;
+    text-align: center; // 中央揃え
+  }
+
+  .profile-handle,
+  .affiliation-inline {
+    font-size: 1em;
+  }
+}
