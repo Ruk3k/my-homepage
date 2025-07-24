@@ -11,7 +11,6 @@
 .profile-avatar {
   width: 120px;
   height: 120px;
-  padding: 8px;
   border-radius: 50%;
   border: 2px solid $border-color-light-gray;
   object-fit: cover;
@@ -72,14 +71,13 @@
 
 @media (max-width: 768px) {
   .profile-page {
-    /* アイコンを配置するスペースを確保するために上部に余白を追加 */
     padding-top: 0.3em;
   }
 
   .social-icons-top-right {
     position: absolute;
-    top: 0em;   /* ← 親要素のpaddingに合わせて位置を調整 */
-    right: 0.5em; /* ← 右端の余白も調整 */
+    top: 0em;
+    right: 0.5em;
     margin-top: 0;
 
     ul {
@@ -114,7 +112,7 @@
 
   .profile-name {
     font-size: 1.5em;
-    text-align: center; // 中央揃え
+    text-align: center;
   }
 
   .profile-handle,
