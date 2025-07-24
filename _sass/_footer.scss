@@ -1,10 +1,10 @@
 // ===== フッターのスタイル =====
 footer {
-  background-color: #f8f8f8;
-  color: $text-color-light;
-  padding: 20px 0;
+  background-color: #eeeeee; // より薄い灰色
+  color: $text-color-base;
+  padding: 0.1em;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 150px;
   border-top: 1px solid $border-color-thin;
 
   .container {
