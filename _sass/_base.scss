@@ -79,9 +79,7 @@ table {
 
 // タブレット向けのスタイル //
 @media (max-width: 1100px) {
-  body {
-    font-size: 16px;
-  }
+
   .content-wrapper {
     max-width: 98vw;
     padding: 0 24px;
@@ -96,6 +94,10 @@ table {
     padding: 0.6em;
   }
 
+  p  {
+    font-size: 0.92em;
+  }
+
   .MathJax_Display {
     margin: 2em 0;
     overflow-x: auto;
@@ -106,7 +108,8 @@ table {
 @media (max-width: 768px) {
 
   body {
-    font-size: 15px;
+    padding: 0em 0.5em;
+    font-size: 0.82em;
   }
 
   .content-wrapper {

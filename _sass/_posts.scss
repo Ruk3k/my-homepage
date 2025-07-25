@@ -70,7 +70,7 @@ h3:has(+ .blog-posts-list) {
 
 // ===== 個別記事ページのスタイル =====
 .post-content {
-  padding: 0;
+  padding: 0.2em;
 
   .post-title {
     font-size: 1.8em;
@@ -125,6 +125,7 @@ h3:has(+ .blog-posts-list) {
 }
 
 @media (max-width: 768px) {
+
   .blog-posts-list li {
     padding: 15px;
     margin-bottom: 15px;
@@ -147,12 +148,15 @@ h3:has(+ .blog-posts-list) {
     }
   }
   .post-content {
+    font-size: 0.92em;
     .post-title {
       font-size: 1.6em;
     }
-
     h3 {
       font-size: 1.4em;
+    }
+    p, ul, ol, li, blockquote {
+      font-size: 0.92em;
     }
   }
 }
