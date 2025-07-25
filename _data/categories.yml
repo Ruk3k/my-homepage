@@ -1,8 +1,8 @@
-- slug: math
-  name: 数学
+- slug: dialy
+  name: 日常系
 - slug: physics
   name: 物理
+- slug: math
+  name: 数学
 - slug: semiconductors
   name: 半導体
-- slug: blog
-  name: ブログ

@@ -23,7 +23,8 @@ permalink: /blog/
   </h3>
 
   <ul class="blog-posts-list">
-    {% for post in posts_in_category %}
+    {% assign limited_posts = posts_in_category | slice: 0, 5 %}
+    {% for post in limited_posts %}
       <li>
         <a href="{{ post.url | relative_url }}">
           <h3>{{ post.title }}</h3>
@@ -41,4 +42,7 @@ permalink: /blog/
       </li>
     {% endfor %}
   </ul>
+  <p style="text-align: right; margin-bottom: 2em;">
+    <a href="{{ '/blog/' | append: category_slug | relative_url }}"> もっと見る &gt;&gt;</a>
+  </p>
 {% endfor %}
