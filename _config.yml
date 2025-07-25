@@ -2,20 +2,20 @@
 
 # サイトの基本情報
 title: るくみるのホームページ
-description: 気ままに考えたことを書いています。
-url: "https://ruk3k.github.io" # あなたのサイトのドメイン名 (OGPやRSSなどで利用)
-baseurl: "/my-homepage" # GitHub Pagesのプロジェクト名 (ローカルテスト時は "" に変更することが多い)
+description: 気ままに書いていきます。
+url: "https://ruk3k.github.io"
+baseurl: "/my-homepage"
 
-# OGP画像のデフォルト (オプション)
-og_image: "/assets/images/default-ogp.jpg" # サイトのルートからの相対パス
+# OGP画像のデフォルト
+og_image: "/assets/images/hedgehogIcon.png"
 
-# Twitterアカウント (オプション)
-twitter_username: ruk3k # 例: your_twitter_handle
+# Twitterアカウント
+twitter_username: ruk3k
 
 # Jekyllの動作設定
 theme: minima
 timezone: Asia/Tokyo
-permalink: /blog/:categories/:title/ # 投稿のパーマリンク設定
+permalink: /blog/:categories/:title/
 
 # ビルドから除外するファイル/ディレクトリ
 exclude:

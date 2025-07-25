@@ -1,0 +1,57 @@
+ .book-card {
+  max-width: 80%;
+  margin: 2em auto;
+  text-align: center;
+  border: 1px solid $border-color-medium;
+  border-radius: 8px;
+  padding: 1.5em;
+  background-color: #fdfdfd;
+}
+
+.book-card-image {
+  margin-bottom: 1em;
+
+  img {
+    max-width: 150px; // 画像の最大幅を指定
+    height: auto;
+    display: block;
+    margin: 0 auto; // 画像を中央に
+  }
+}
+
+.book-card-info {
+  line-height: 1.5;
+}
+
+.book-card-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 0 0 0.3em 0;
+}
+
+.book-card-author {
+  font-size: 0.85em;
+  color: $text-color-light;
+  margin: 0;
+}
+
+.book-card-link {
+  margin-top: 1.5em;
+
+  a {
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: bold; // 文字を少し太く
+    color: #111; // 文字色を黒に
+    background-color: #FFC400; // Amazonの黄色
+    padding: 0.6em 1.5em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #FF9900; // ホバー時にオレンジに
+      color: #111;
+    }
+  }
+}

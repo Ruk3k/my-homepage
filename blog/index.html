@@ -5,18 +5,10 @@ permalink: /blog/
 ---
 
 <h2>カテゴリ別記事一覧</h2>
-{% for category in site.categories %}
-  {% assign category_slug = category | first %}
-  {% assign posts_in_category = category | last %}
-
-  {% comment %} _data/categories.yml から日本語名を取得 {% endcomment %}
-  {% assign category_display_name = category_slug %}
-  {% for item in site.data.categories %}
-    {% if item.slug == category_slug %}
-      {% assign category_display_name = item.name %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
+{% for item in site.data.categories %}
+  {% assign category_slug = item.slug %}
+  {% assign category_display_name = item.name %}
+  {% assign posts_in_category = site.categories[category_slug] %}
 
   <h3>
       {{ category_display_name }}
