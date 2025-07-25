@@ -15,7 +15,7 @@ og_image: /assets/images/home-ogp.jpg # このページ固有のOGP画像
 <h2>最近の投稿</h2>
 
 <ul class="blog-posts-list">
-  {% assign recent_posts = site.posts | limit: 6 %}
+  {% assign recent_posts = site.posts | slice: 0, 6 %}
   {% for post in recent_posts %}
     <li>
       <a href="{{ post.url | relative_url }}">
